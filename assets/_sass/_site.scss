@@ -139,12 +139,44 @@ canvas {
   }
 }
 
+.resume-menu-icon {
+  position: absolute;
+  top: 30px;
+  right: 140px;
+  width: 30px;
+  height: 35px;
+  border: 2px solid $gray;
+  background: $white;
+  &:before {
+    position: absolute;
+    content: 'CV';
+    font-size: 12px;
+    color: darken($white, 40);
+    top:10px;
+    left: 5px;
+  }
+  &:hover {
+    border-color: $green;
+    &:before {
+      color: $green;
+    };
+    &:after {
+      border-color: $green;
+    }
+  }
+}
+
+.resume,
 .posts-link,
 .projects-link {
   position: absolute;
   top: 73px;
   font-size: 12px;
   color: darken($white, 40);
+}
+
+.resume {
+  right: 135px;
 }
 
 .posts-link {
